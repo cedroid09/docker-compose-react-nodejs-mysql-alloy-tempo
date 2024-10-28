@@ -1,7 +1,7 @@
-require('../config/otel-config.js'); // Load OpenTelemetry first
 const dbConfig = require("../config/db.config.js");
 
 const Sequelize = require("sequelize");
+console.log(`DB_HOST: ${dbConfig.HOST}`)
 const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
   host: dbConfig.HOST,
   dialect: dbConfig.dialect,

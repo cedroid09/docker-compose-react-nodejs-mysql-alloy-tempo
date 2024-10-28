@@ -1,3 +1,4 @@
+require('./app/config/otel-config'); // Load OpenTelemetry first
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
